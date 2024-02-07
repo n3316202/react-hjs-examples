@@ -1,4 +1,7 @@
 import App from "../App";
+import Greeting from "../components/jsxEx/Greeting";
+import HelloWorld from "../components/jsxEx/HelloWorld";
+
 
 const exampleRoutes = [
   {
@@ -7,14 +10,14 @@ const exampleRoutes = [
     loader: () => "Example",
     children: [
       {
-        path: "home",
-        loader: () => "home",
-        element: <div>홈입니다.</div>,
+        path: "hello",
+        loader: () => "헬로월드",
+        element: <HelloWorld/>,
       },
       {
-        path: "user/:userId",
-        loader: () => "user",
-        element: <div>사용자 상세 페이지입니다.</div>,
+        path: "greeting",
+        loader: () => "jsx-프롭스예제",
+        element: <Greeting></Greeting>,
       },
     ],
   },
