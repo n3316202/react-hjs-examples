@@ -16,7 +16,6 @@ function App() {
   return (
     <div id="App">
       <MainHeader></MainHeader>
-
       <OutletCss>
         <Outlet/>{/*⭐️ URL에 따라 변경되는 부분 ⭐️ */}
       </OutletCss>
