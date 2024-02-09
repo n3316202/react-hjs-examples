@@ -1,6 +1,6 @@
 import React from 'react';
 
-class PlusOneExample extends React.Component {
+class CouterExample extends React.Component {
     
     //state 는 반드시 set 함수로만 접근 할수 있음
     state = {
@@ -33,4 +33,4 @@ class PlusOneExample extends React.Component {
     }
   }
 
-export default PlusOneExample
+export default CouterExample

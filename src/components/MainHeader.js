@@ -5,7 +5,7 @@ import exampleRoutes from "../router/routes";
 
 
 
-function MainHeader(props) {
+function MainHeader() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

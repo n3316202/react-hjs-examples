@@ -5,7 +5,10 @@ import GreetingColor from "../components/props/GreetingColor2";
 import DefaultProps from "../components/props/DefaultProps3";
 import PropsParent from "../components/props/PropsParent4";
 import {ConditionalRenderingExample,ConditionalRenderingWithTernary } from "../components/conditionalRendering/ConditionalRenderingExample";
-import PlusOneExample from "../components/understandState/PlusOneExample";
+//import CounterExample from "../components/understandState/CounterExample";
+import BasicCounterExample from "../components/hooksEx/BasicCounterExample";
+import CouterExample from "../components/understandState/CounterExample";
+
 
 const exampleRoutes = [
   {
@@ -57,10 +60,15 @@ const exampleRoutes = [
       {
         path: "understanding-state",
         loader: () => "State의 이해 - 1",
-        element: <PlusOneExample>
-        </PlusOneExample>,
-      } 
-
+        element: <CouterExample>
+        </CouterExample>,
+      },
+      {
+        path: "hook-useState",
+        loader: () => "Hook의 이해-useState-1",
+        element: <BasicCounterExample>
+        </BasicCounterExample>,
+      }     
     ],
   },
 ];
