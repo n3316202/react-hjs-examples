@@ -5,10 +5,13 @@ import GreetingColor from "../components/props/GreetingColor2";
 import DefaultProps from "../components/props/DefaultProps3";
 import PropsParent from "../components/props/PropsParent4";
 import {ConditionalRenderingExample,ConditionalRenderingWithTernary } from "../components/conditionalRendering/ConditionalRenderingExample";
-//import CounterExample from "../components/understandState/CounterExample";
 import BasicCounterExample from "../components/hooksEx/BasicCounterExample";
 import CouterExample from "../components/understandState/CounterExample";
-
+import UseEffectExample from "../components/hooksEx/UseEffectExample";
+import UseEffectExample2 from "../components/hooksEx/UseEffectExample2";
+import UseEffectExample3 from "../components/hooksEx/UseEffectExample3";
+import UseMemoExample4 from "../components/hooksEx/UseMemoExample4";
+import UseMemoExample5 from "../components/hooksEx/UseMemoExample5";
 
 const exampleRoutes = [
   {
@@ -68,6 +71,33 @@ const exampleRoutes = [
         loader: () => "Hook의 이해-useState-1",
         element: <BasicCounterExample>
         </BasicCounterExample>,
+      },
+      {
+        path: "hook-useEffectiv",
+        loader: () => "Hook의 이해-useEffective-1",
+        element: <UseEffectExample>
+        </UseEffectExample>,
+      },
+      {
+        path: "hook-useEffect2",
+        loader: () => "Hook의 이해-useEffect-2",
+        element: <UseEffectExample2>
+        </UseEffectExample2>,
+      },
+      {
+        path: "hook-useEffect3",
+        loader: () => "Hook의 이해-useEffect-3",
+        element: <UseEffectExample3></UseEffectExample3>,
+      },
+      {
+        path: "hook-useMemo1",
+        loader: () => "Hook의 이해-useMemo-1",
+        element: <UseMemoExample4></UseMemoExample4>,
+      },
+      {
+        path: "hook-useMemo2",
+        loader: () => "Hook의 이해-useMemo-2",
+        element: <UseMemoExample5></UseMemoExample5>,
       }     
     ],
   },
