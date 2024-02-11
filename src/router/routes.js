@@ -18,6 +18,9 @@ import InputAndEvent from "../components/events/InputAndEvent";
 import InputsAndEvent2 from './../components/events/InputsAndEvent2';
 import SelectAndEvent3 from "../components/events/SelectAndEvent3";
 import ListAndKey from "../components/listkey/ListAndKey";
+import ArrayRendering from "../components/listkey/ArrayRendering";
+import InputUseRef from './../components/refs/InputUseRef';
+import UseRefExample from './../components/refs/UseRefExample';
 
 const exampleRoutes = [
   {
@@ -134,6 +137,21 @@ const exampleRoutes = [
         path: "list-key",
         loader: () => "리스트 키 예제",
         element: <ListAndKey></ListAndKey>,
+      },
+      {
+        path: "array-rendering",
+        loader: () => "리스트(Array) 렌더링 예제",
+        element: <ArrayRendering></ArrayRendering>,
+      },
+      {
+        path: "input-ref",
+        loader: () => "useRef 예제 - 1",
+        element: <InputUseRef></InputUseRef>,
+      },
+      {
+        path: "use-ref",
+        loader: () => "useRef 예제 - 2",
+        element: <UseRefExample></UseRefExample>,
       }     
     ],
   },
