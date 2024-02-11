@@ -20,7 +20,7 @@ function UseEffectExample2() {
     return (
       <div>
         <h1>Hello</h1>
-        <button type="button" class="btn btn-primary"onClick={onClick}>리렌더링 버튼</button>
+        <button type="button" class="btn btn-primary" onClick={onClick}>리렌더링 버튼</button>
       </div>
     );
 }

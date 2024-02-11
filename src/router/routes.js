@@ -12,6 +12,12 @@ import UseEffectExample2 from "../components/hooksEx/UseEffectExample2";
 import UseEffectExample3 from "../components/hooksEx/UseEffectExample3";
 import UseMemoExample4 from "../components/hooksEx/UseMemoExample4";
 import UseMemoExample5 from "../components/hooksEx/UseMemoExample5";
+import ToggleEvent from "../components/events/ToggleEvent"
+import SyntheticEventEx from "../components/events/SyntheticEventEx";
+import InputAndEvent from "../components/events/InputAndEvent";
+import InputsAndEvent2 from './../components/events/InputsAndEvent2';
+import SelectAndEvent3 from "../components/events/SelectAndEvent3";
+import ListAndKey from "../components/listkey/ListAndKey";
 
 const exampleRoutes = [
   {
@@ -98,6 +104,36 @@ const exampleRoutes = [
         path: "hook-useMemo2",
         loader: () => "Hook의 이해-useMemo-2",
         element: <UseMemoExample5></UseMemoExample5>,
+      },
+      {
+        path: "event-toggle",
+        loader: () => "이벤트 예제 - 1",
+        element: <ToggleEvent></ToggleEvent>,
+      },
+      {
+        path: "event-sythentic",
+        loader: () => "이벤트 예제 - 합성이벤트 2",
+        element: <SyntheticEventEx></SyntheticEventEx>,
+      },
+      {
+        path: "input-example",
+        loader: () => "태그(Input)+이벤트 예제",
+        element: <InputAndEvent></InputAndEvent>,
+      },
+      {
+        path: "input-example2",
+        loader: () => "태그(Input 여러개)+이벤트 예제",
+        element: <InputsAndEvent2></InputsAndEvent2>,
+      },
+      {
+        path: "select-example",
+        loader: () => "태그(Select)+이벤트 예제",
+        element: <SelectAndEvent3></SelectAndEvent3>,
+      },
+      {
+        path: "list-key",
+        loader: () => "리스트 키 예제",
+        element: <ListAndKey></ListAndKey>,
       }     
     ],
   },
