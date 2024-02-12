@@ -18,9 +18,12 @@ import InputAndEvent from "../components/events/InputAndEvent";
 import InputsAndEvent2 from './../components/events/InputsAndEvent2';
 import SelectAndEvent3 from "../components/events/SelectAndEvent3";
 import ListAndKey from "../components/listkey/ListAndKey";
-import ArrayRendering from "../components/listkey/ArrayRendering";
 import InputUseRef from './../components/refs/InputUseRef';
 import UseRefExample from './../components/refs/UseRefExample';
+import UsersProject from "../components/users/UsersProject";
+import ThemeNotUseContextApp from "../components/contextapi/ThemeNotUseContextApp";
+import PropsDrillingExample from "../components/contextapi/PropsDrillingExample";
+import HelloUsingContext from "../components/contextapi/HelloUsingContext";
 
 const exampleRoutes = [
   {
@@ -139,11 +142,6 @@ const exampleRoutes = [
         element: <ListAndKey></ListAndKey>,
       },
       {
-        path: "array-rendering",
-        loader: () => "리스트(Array) 렌더링 예제",
-        element: <ArrayRendering></ArrayRendering>,
-      },
-      {
         path: "input-ref",
         loader: () => "useRef 예제 - 1",
         element: <InputUseRef></InputUseRef>,
@@ -152,6 +150,27 @@ const exampleRoutes = [
         path: "use-ref",
         loader: () => "useRef 예제 - 2",
         element: <UseRefExample></UseRefExample>,
+      },
+      {
+        path: "project-users",
+        loader: () => "유저 프로젝트",
+        element: <UsersProject></UsersProject>,
+      },
+      {
+        path: "contextapi-notuse",
+        loader: () => "컨텍스트API - 기존 방법(컨텍스트 API 사용 안한 예제)",
+        element: <ThemeNotUseContextApp></ThemeNotUseContextApp>,
+      },
+      {
+        path: "props-drilling",
+        loader: () => "컨텍스트API - 프롭스 드릴링",
+        element: <PropsDrillingExample></PropsDrillingExample>,
+      },
+      ,
+      {
+        path: "contextapi-helloworld",
+        loader: () => "컨텍스트API - 컨텍스트 API 사용 Hello World)",
+        element: <HelloUsingContext></HelloUsingContext>,
       }     
     ],
   },
